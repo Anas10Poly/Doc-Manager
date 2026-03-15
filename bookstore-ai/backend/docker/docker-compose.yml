@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  sftp:
+    image: atmoz/sftp:latest
+    container_name: sftp-server
+    ports:
+      - "22:22"
+    volumes:
+      - ../sftp/sftpuser:/home/sftpuser/upload
+    command: sftpuser:P@ssw0rd123:::upload
+    restart: unless-stopped

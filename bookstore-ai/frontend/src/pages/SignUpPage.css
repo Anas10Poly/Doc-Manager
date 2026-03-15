@@ -1,0 +1,49 @@
+/* SignUpPage.css */
+
+.signup-container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.left-side {
+  background-color: #051e43ff;
+  color: white;
+  padding: 3rem 2rem; /* équivalent à p-5 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side .icon {
+  margin-bottom: 1rem;
+}
+
+.left-side h1 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.left-side p {
+  margin-bottom: 1.5rem;
+}
+
+.features-list > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.right-side {
+  background-color: white;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form-wrapper {
+  max-width: 450px;
+  width: 100%;
+}

@@ -1,0 +1,39 @@
+.sidebar {
+  width: 230px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #082846;
+  z-index: 1040; /* Plus élevé que celui du Navbar */
+}
+
+.sidebar h4 {
+  color: white;
+  margin-bottom: 38px; /* Increased for more space below title */
+  padding-left: 10px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.sidebar a {
+  color: white !important;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 0.95em;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #125285 !important;
+  text-decoration: none;
+  transform: translateX(5px);
+}
+
+.sidebar a.active {
+  background-color: #125285 !important;
+  font-weight: 700;
+}
